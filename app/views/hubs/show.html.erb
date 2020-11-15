@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @hub.active %>
+</p>
+
+<p>
+  <strong>Inactive:</strong>
+  <%= @hub.inactive %>
+</p>
+
+<p>
+  <strong>Hub number:</strong>
+  <%= @hub.hub_number %>
+</p>
+
+<%= link_to 'Edit', edit_hub_path(@hub) %> |
+<%= link_to 'Back', hubs_path %>

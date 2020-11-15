@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Hubs</h1>
+
+<h2>WELCOME</h2>
+
+<body>
+  <%# <%= javascript_pack_tag 'hello_react', data: {hubs: @hubs}%> %>
+
+  <%= button_to 'Scrape', scrape_hubs_path, class: 'btn btn-primary' %>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Hub</th>
+        <th>Active number</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+          <%= react_component('Hubs', hubs: @hubs.to_json) %>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Hub', new_hub_path %>
+
+  <div id="root"></div>
+
+<body>
