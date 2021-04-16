@@ -1,6 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
+import axios from "axios";
+
 class Hubs extends React.Component {
+  handleClick() {
+    debugger;
+    this.props.hubs.map(hub => (
+      axios.put(`/hubs/${hub.id}.json`, {active: `${hub.active}`})
+    ))
+  }
   render () {
     return (
         <div className="table-responsive">
@@ -26,10 +34,19 @@ class Hubs extends React.Component {
               ))}
             </tbody>
           </table>
+          <div className="new-button">
+            <button
+              className="btn btn-primary" onClick={this.handleClick.bind(this)}>Scrape Nowwwww
+            </button>
+          </div>
         </div>
+        
     );
   }
 }
+
+
+
 
 Hubs.propTypes = {
   hubNumber: PropTypes.node,
