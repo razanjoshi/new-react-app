@@ -20,7 +20,7 @@
         Login
         </a>
         <div style="padding-left: 10px;">
-          <%= button_to 'Check Active Nodes', scrape_hubs_path, class: 'btn btn-outline-success scrape-btn' %>
+          <%= link_to 'Check Active Nodes', scrape_hubs_path, method: :post, class: 'btn btn-outline-success scrape-btn' %>
         </div>
       </form>
     </nav>
