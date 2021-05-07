@@ -1,22 +1,21 @@
 <p id="notice"><%= notice %></p>
+<div class="container-fluid centered">
+  <h1>Selenium Hubs with their Active nodes</h1>
 
-<h1>Hubs</h1>
+  <body>
+    <%# <%= javascript_pack_tag 'hello_react', data: {hubs: @hubs}%>
 
-<h2>WELCOME</h2>
+    <%# <%= button_to 'Scrape', scrape_hubs_path, class: 'btn btn-outline-success' %> 
 
-<body>
-  <%# <%= javascript_pack_tag 'hello_react', data: {hubs: @hubs}%>
+    <br>
+    <div class="card card-body bg-light">
+      <%= react_component('Hubs', hubs: @hubs) %>
+    </div>
+    <br>
 
-  <%= button_to 'Scrape', scrape_hubs_path, class: 'btn btn-primary' %>
+    <%= link_to 'New Hub', new_hub_path %>
 
-  <br>
+    <div id="root"></div>
 
-  <%= react_component('Hubs', hubs: @hubs) %>
-
-  <br>
-
-  <%= link_to 'New Hub', new_hub_path %>
-
-  <div id="root"></div>
-
-<body>
+  <body>
+</div>

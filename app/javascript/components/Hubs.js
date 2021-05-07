@@ -9,6 +9,7 @@ class Hubs extends React.Component {
               <tr>
                 <th scope="col">Hub</th>
                 <th scope="col">Active number</th>
+                <th scope="col">Selenium URL</th>
                 <th scope="col" className="text-right">
                   Actions
                 </th>
@@ -20,6 +21,7 @@ class Hubs extends React.Component {
                   <React.Fragment>
                     <td>{hub.hub_number}</td>
                     <td>{hub.active}</td>
+                    <td>{hub.url}</td>
                     <td></td>
                   </React.Fragment>
                 </tr>

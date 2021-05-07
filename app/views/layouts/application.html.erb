@@ -13,6 +13,17 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-inverse head-color">
+      <img class="logo-area" href="/" src="/logo.png"></img>
+      <form class="form-inline">
+        <a class="btn btn-outline-primary" href="/login" role="button">
+        Login
+        </a>
+        <div style="padding-left: 10px;">
+          <%= link_to 'Check Active Nodes', scrape_hubs_path, method: :post, class: 'btn btn-outline-success scrape-btn' %>
+        </div>
+      </form>
+    </nav>
     <%= yield %>
   </body>
 </html>

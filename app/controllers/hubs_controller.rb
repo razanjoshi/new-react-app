@@ -5,7 +5,7 @@ class HubsController < ApplicationController
   # GET /hubs.json
   def index
     @hubs = Hub.all
-    
+
     respond_to do |format|
       format.html
       format.json { render json: @hubs }
