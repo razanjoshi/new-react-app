@@ -5,7 +5,7 @@ ruby '2.6.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
-gem 'rake'
+gem 'rake', '~> 13.0.3'
 gem 'rack-timeout', '0.3.2'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
