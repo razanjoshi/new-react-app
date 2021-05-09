@@ -1,0 +1,15 @@
+current directory: /Users/rajanjoshi/Code/otb/new-react-app/vendor/cache/ruby/2.6.0/gems/murmurhash3-0.1.6/ext/murmurhash3
+/Users/rajanjoshi/.rvm/rubies/ruby-2.6.0/bin/ruby -I /Users/rajanjoshi/.rvm/rubies/ruby-2.6.0/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210509-42238-xj2m1d.rb extconf.rb
+creating Makefile
+
+current directory: /Users/rajanjoshi/Code/otb/new-react-app/vendor/cache/ruby/2.6.0/gems/murmurhash3-0.1.6/ext/murmurhash3
+make "DESTDIR=" clean
+
+current directory: /Users/rajanjoshi/Code/otb/new-react-app/vendor/cache/ruby/2.6.0/gems/murmurhash3-0.1.6/ext/murmurhash3
+make "DESTDIR="
+compiling murmur3.c
+linking shared-object native.bundle
+
+current directory: /Users/rajanjoshi/Code/otb/new-react-app/vendor/cache/ruby/2.6.0/gems/murmurhash3-0.1.6/ext/murmurhash3
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 native.bundle ./.gem.20210509-42238-pg0mcv

@@ -1,0 +1,15 @@
+current directory: /Users/rajanjoshi/Code/otb/new-react-app/vendor/cache/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/rajanjoshi/.rvm/rubies/ruby-2.6.0/bin/ruby -I /Users/rajanjoshi/.rvm/rubies/ruby-2.6.0/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210509-42238-wp4hkv.rb extconf.rb
+creating Makefile
+
+current directory: /Users/rajanjoshi/Code/otb/new-react-app/vendor/cache/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/rajanjoshi/Code/otb/new-react-app/vendor/cache/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/rajanjoshi/Code/otb/new-react-app/vendor/cache/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20210509-42238-vnft5c/skiptrace/internal
