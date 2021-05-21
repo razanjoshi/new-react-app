@@ -92,11 +92,13 @@ class HubsController < ApplicationController
 
     def urls
       [
+        'http://selenium-hub1.hq.otbeach.com:4444/grid/console',
+        'http://selenium-hub2.hq.otbeach.com:4444/grid/console',
+        'http://selenium-hub3.hq.otbeach.com:4444/grid/console',
         'http://selenium-hub4.hq.otbeach.com:4444/grid/console',
         'http://selenium-hub5.hq.otbeach.com:4444/grid/console',
-        'http://selenium-hub01.247.otbeach.com:4444/grid/console',
-        'http://selenium-hub1.hq.otbeach.com:4444/grid/console',
-        'http://selenium-hub6.hq.otbeach.com:4444/grid/console'
+        'http://selenium-hub6.hq.otbeach.com:4444/grid/console',
+        'http://selenium-hub8.hq.otbeach.com:4444/grid/console'
       ]
     end
 end

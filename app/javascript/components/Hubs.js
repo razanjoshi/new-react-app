@@ -4,11 +4,12 @@ class Hubs extends React.Component {
   render () {
     return (
         <div className="table-responsive">
-          <table className="table table-dark">
+          <table className="table">
             <thead>
               <tr>
                 <th scope="col">Hub</th>
                 <th scope="col">Active number</th>
+                <th scope="col">Expected no. of hubs</th>
                 <th scope="col">Selenium URL</th>
                 <th scope="col" className="text-right">
                   Actions
@@ -21,6 +22,7 @@ class Hubs extends React.Component {
                   <React.Fragment>
                     <td>{hub.hub_number}</td>
                     <td>{hub.active}</td>
+                    <td>{hub.active_expected}</td>
                     <td>{hub.url}</td>
                     <td></td>
                   </React.Fragment>
