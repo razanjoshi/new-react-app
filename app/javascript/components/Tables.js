@@ -43,7 +43,7 @@ class Tables extends React.Component {
                   <td>{hub.hub_number}</td>
                   <td>{hub.active}</td>
                   <td>{hub.active_expected}</td>
-                  <td><a class='button' href='#'>{hub.url}</a></td>
+                  <td><a class='button' href={hub.url} target='_blank'>{hub.url}</a></td>
                   <td class='select'>
                     <a class='button' href='#'>
                       Select
