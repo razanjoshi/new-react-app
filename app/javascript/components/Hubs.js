@@ -7,9 +7,9 @@ class Hubs extends React.Component {
           <table className="table">
             <thead>
               <tr>
-                <th scope="col">Hub</th>
-                <th scope="col">Active number</th>
-                <th scope="col">Expected no. of hubs</th>
+                <th scope="col" className="text-center">Hub</th>
+                <th scope="col" className="text-center">Active number</th>
+                <th scope="col" className="text-center">Expected no. of hubs</th>
                 <th scope="col">Selenium URL</th>
                 <th scope="col" className="text-right">
                   Actions
@@ -20,11 +20,11 @@ class Hubs extends React.Component {
               { this.props.hubs.map(hub => (
                 <tr>
                   <React.Fragment>
-                    <td>{hub.hub_number}</td>
-                    <td>{hub.active}</td>
-                    <td>{hub.active_expected}</td>
+                    <td className="text-center">{hub.hub_number}</td>
+                    <td className="text-center">{hub.active}</td>
+                    <td className="text-center">{hub.active_expected}</td>
                     <td>{hub.url}</td>
-                    <td></td>
+                    <td><button class="btn btn-outline-primary">edit</button></td>
                   </React.Fragment>
                 </tr>
               ))}
